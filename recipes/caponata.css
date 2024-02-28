@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(185, 172, 172);
+    background-image: url('../images/background2.jpg');
+    text-align: center;
+}
+
+#recipe {
+    color: rgb(180, 131, 67);
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.image-container {
+    max-width: 100%;
+    width: 40%;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.toggle-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgb(34, 107, 107);
+    color: aliceblue;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.toggle-content {
+    display: none;
+    padding: 10px;
+}
+
+/* Use :target to show content when corresponding label is clicked */
+.toggle-button:target + .toggle-content {
+    display: block;
+}
